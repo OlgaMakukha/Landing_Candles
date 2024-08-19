@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <nav class="header__nav">
+                    <div class="header__nav--close">
+                        <span></span>
+                    </div>
+                    <ul class="header__menu">
+                        <li><a href="#header">Главная</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#items">Ассортимент</a></li>
+                        <li><a href="#footer">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__phone">
+                    <a href="tel:+79111234567">+7 (911) 123-45-67</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="main__screen">
+            <div class="container">
+                <h1 class="main__title">Создайте атмосферу уюта<br> с нашими домашними свечами</h1>
+                <div class="main__screen--wrapper">
+                    <img src="./img/main-screen.jpg" alt="" width="560" height="315">
+                    <div class="main__screen--text">
+                        <p class="text-p">Коллекция свечей ручной работы, которые превратят ваш дом в уютное пространство. Наши свечи созданы с любовью и вниманием к деталям, чтобы каждый момент стал особенным.</p>
+                        <a class="btn main__btn text-p" href="#order">Заказать</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages" id="about">
+            <div class="container">
+                <h3 class="advantages__title">Преимущества</h3>
+                <div class="advantages__wrapper">
+                    <div class="advantages__tabs">
+                        <div class="advantages__tab active" data-btn="nature">
+                            <p class="text-p">Натуральность материалов</p>
+                            <img src="./img/nature.svg" class="advantages__tab--img active" data-icon="nature" alt="Натуральность материалов" width="48" height="50">
+                        </div>
+                        <div class="advantages__tab" data-btn="handMade">
+                            <p class="text-p">Ручная работа</p>
+                            <img src="./img/handmade.svg" class="advantages__tab--img" data-icon="handMade" alt="Ручная работа" width="48" height="50">
+                        </div>
+                        <div class="advantages__tab" data-btn="uniqe">
+                            <p class="text-p">Уникальные ароматы</p>
+                            <img src="./img/uniq.svg" class="advantages__tab--img" data-icon="uniqe" alt="Уникальные ароматы" width="48" height="50">
+                        </div>
+                    </div>
+                    <div class="advantages__content">
+                        <div class="advantages__content--item active" data-content="nature">
+                            <img src="./img/advantage1.jpg" alt="" width="560" height="315">
+                            <p class="small-text">Каждая свеча создается вручную с заботой<br> и вниманием к деталям.</p>
+                        </div>
+                        <div class="advantages__content--item" data-content="handMade">
+                            <img src="./img/advantage2.jpg" alt="" width="560" height="315">
+                            <p class="small-text">Мы предлагаем широкий выбор неповторимых ароматов, чтобы каждая свеча приносила удовольствие.</p>
+                        </div>
+                        <div class="advantages__content--item" data-content="uniqe">
+                            <img src="./img/advantage3.jpg" alt="" width="560" height="315">
+                            <p class="small-text">Используем только высококачественные натуральные материалы для создания наших свечей.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="goods" id="items">
+            <div class="container">
+                <h3 class="goods__title">Наши товары</h3>
+                <div class="goods__text">
+                    <p class="text-p">Откройте для себя нежные ароматы и уютный свет наших уникальных свечей.</p>
+                    <div class="goods__buttons">
+                        <button type="button" class="goods__btn prev-btn"></button>
+                        <button type="button" class="goods__btn next-btn"></button>
+                    </div>
+                </div>
+                    <div class="goods__wrapper">
+                        <div class="goods__item active">
+                            <div class="goods__item--about">
+                                <h2>Лаванда мечты</h2>
+                                <p class="text-p">Нежный аромат лаванды поможет вам расслабиться и создать атмосферу уюта</p>
+                                <button type="button" class="goods__item--btn text-p">Подробнее</button>
+                            </div>
+                            <div>
+                                <img src="./img/item1.jpg" alt="Лаванда мечты" width="540" height="304">
+                            </div>
+                        </div>
+                        <div class="goods__item">
+                            <div class="goods__item--about">
+                                <h2>Ванильная сказка</h2>
+                                <p class="text-p">Аромат ванили наполнит ваш дом нежной сладостью и уютом</p>
+                                <button type="button" class="goods__item--btn text-p">Подробнее</button>
+                            </div>
+                            <div>
+                                <img src="./img/item2.jpg" alt="Ванильная сказка" width="540" height="304">
+                            </div>
+                        </div>
+                        <div class="goods__item">
+                            <div class="goods__item--about">
+                                <h2>Лесной бриз</h2>
+                                <p class="text-p">Аромат свежего леса поможет вам ощутить природную гармонию и покой</p>
+                                <button type="button" class="goods__item--btn text-p">Подробнее</button>
+                            </div>
+                            <div>
+                                <img src="./img/item3.jpg" alt="Лесной бриз" width="540" height="304">
+                            </div>
+                        </div>
+                        <div class="goods__dots--wrapper">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <section class="order" id="order">
+            <div class="container">
+                <h3 class="order__title">Сделать заказ</h3>
+                <div class="order__wrapper">
+                    <div class="order__wrapper--left">
+                        <h2>Хотите заказать наши уютные свечи? </h2>
+                        <img src="./img/order.jpg" alt="две свечи с плетеной корзиной" width="561" height="316">
+                    </div>
+                    <div class="order__wrapper--right">
+                        <form class="order__form" action="post">
+                            <input type="text" name="name" placeholder="Имя" required>
+                            <input type="tel" name="phone" placeholder="Телефон" required>
+                            <input type="email" name="email" placeholder="Почта" required>
+                            <div class="order__checkboxes">
+                                <div>
+                                    <input type="checkbox" id="lavander" name="order" value="lavander" checked>
+                                    <label class="text-p" for="lavander">лаванды мечты</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="vanilla" name="order" value="vanilla">
+                                    <label class="text-p" for="vanilla">ванильная сказка</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="forest" name="order" value="forest">
+                                    <label class="text-p" for="forest">лесной бриз</label>
+                                </div>
+                            </div>
+                            <input class="order__btn text-p" type="submit" value="Отправить">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <nav class="footer__nav">
+                    <ul class="footer__menu">
+                        <li><a href="#header">Главная</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#items">Ассортимент</a></li>
+                        <li><a href="#footer">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__copyright">
+                    <a href="#">© 2023 All rights reserved</a>
+                </div>
+                <div class="footer__contacts">
+                    <a class="footer__phone" href="tel:+79111234567">+7 (911) 123-45-67</a>
+                    <a class="footer__email" href="mailto:candlemail@gmail.com">candlemail@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal__order">
+        <div class="overlay__order"></div>
+        <div class="modal__order--wrapper">
+            <button type="button" class="modal__order--btn"></button>
+            <div>
+                <h2>Ваша заявка успешно отправлена</h2>
+                <p class="text-p">Совсем скоро администратор нашего магазина свяжется с вами! </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal1" class="modal">
+        <div class="overlay"></div>
+        <div class="modal__window">
+            <div class="modal__window--header">
+                <h2>Свеча<br> Лаванда мечты</h2>
+                <button type="button" class="modal__btn--close"></button>
+            </div>
+            <div class="modal__window--body">
+                <div class="modal__window--text">
+                    <p>Нежный аромат лаванды поможет вам расслабиться и создать атмосферу уюта. Эта свеча идеально подходит для вечера, наполненного спокойствием и гармонией. Она поможет вам расслабиться после долгого дня и насладиться уютом вашего дома.</p>
+                    <p>— цвет: фиолетовый;</p>
+                    <p>— горение: до 25 часов;</p>
+                    <p>— цена: 350 руб.</p>
+                </div>
+                <img src="./img/img-popup_1/item1.jpg" alt="две белые заженные свечи" width="372" height="208">
+                <img src="./img/img-popup_1/item2.jpg" alt="две белые свечи" width="372" height="208">
+                <img src="./img/img-popup_1/item3.jpg" alt="одна белая свеча" width="372" height="208">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="overlay"></div>
+        <div class="modal__window">
+            <div class="modal__window--header">
+                <h2>Свеча<br> Ванильная сказка</h2>
+                <button type="button" class="modal__btn--close"></button>
+            </div>
+            <div class="modal__window--body">
+                <div class="modal__window--text">
+                    <p>Аромат ванили наполнит ваш дом нежной сладостью и уютом. Эта свеча создает уютную атмосферу и придает комнате умиротворение. Идеальный выбор для романтических вечеров и вечеринок с друзьями.</p>
+                    <p>— цвет: бежевый;</p>
+                    <p>— горение: до 30 часов;</p>
+                    <p>— цена: 400 руб.</p>
+                </div>
+                <img src="./img/img-popup_2/item1.jpg" alt="две белые заженные свечи" width="372" height="208">
+                <img src="./img/img-popup_2/item2.jpg" alt="две белые свечи" width="372" height="208">
+                <img src="./img/img-popup_2/item3.jpg" alt="одна белая свеча" width="372" height="208">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="overlay"></div>
+        <div class="modal__window">
+            <div class="modal__window--header">
+                <h2>Свеча<br> Лесной бриз</h2>
+                <button type="button" class="modal__btn--close"></button>
+            </div>
+            <div class="modal__window--body">
+                <div class="modal__window--text">
+                    <p>Аромат свежего леса поможет вам ощутить природную гармонию и покой. Эта свеча призвана создать атмосферу уюта и спокойствия, напоминая о прогулках по лесу. Отличный выбор для тех, кто ценит природу и хочет принести ее в свой дом..</p>
+                    <p>— цвет: бежевый;</p>
+                    <p>— горение: до 35 часов;</p>
+                    <p>— цена: 450 руб.</p>
+                </div>
+                <img src="./img/img-popup_3/item1.jpg" alt="две белые заженные свечи" width="372" height="208">
+                <img src="./img/img-popup_3/item2.jpg" alt="две белые свечи" width="372" height="208">
+                <img src="./img/img-popup_3/item3.jpg" alt="одна белая свеча" width="372" height="208">
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>
