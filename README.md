@@ -15,3 +15,4 @@
 - JavaScript
 
 ## Ссылка на сайт
+https://olgamakukha.github.io/Landing_Candles/
