@@ -143,9 +143,18 @@
                     </div>
                     <div class="order__wrapper--right">
                         <form class="order__form" action="post">
-                            <input type="text" name="name" placeholder="Имя" required>
-                            <input type="tel" name="phone" placeholder="Телефон" required>
-                            <input type="email" name="email" placeholder="Почта" required>
+                            <div class="order__form--item">
+                                <input class="not-empty" type="text" name="name" placeholder="Имя" title="Используйте только буквы">
+                                <span class="error-message">Используйте только буквы</span>
+                            </div>
+                            <div class="order__form--item">
+                                <input class="not-empty" type="tel" name="phone" placeholder="Телефон" title="Формат: +XXXXXXXXXXX">
+                                <span class="error-message">Формат: +XXXXXXXXXXX</span>
+                            </div>
+                            <div class="order__form--item">
+                                <input class="not-empty" type="email" name="email" placeholder="Почта" title="Формат: example@domain.com">
+                                <span class="error-message">Формат: example@domain.com</span>
+                            </div>
                             <div class="order__checkboxes">
                                 <div>
                                     <input type="checkbox" id="lavander" name="order" value="lavander" checked>

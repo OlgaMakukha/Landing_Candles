@@ -3,7 +3,6 @@ const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
 const dots = document.querySelectorAll('.dot');
 let index = 0;
-console.log(items);
 
 function activeSlide(n) {
     items.forEach((item) => {
@@ -53,4 +52,3 @@ dots.forEach(function(item, indexDot) {
 
 nextBtn.addEventListener('click', nextSlide);
 prevBtn.addEventListener('click', prevSlide);
-
