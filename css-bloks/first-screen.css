@@ -1,0 +1,48 @@
+.main__screen {
+    background-color: var(--color-light_brown);
+    padding: 8rem 2rem 12rem;
+}
+
+.main__title {
+    margin-bottom: 6rem;
+}
+
+.main__screen--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 3.9rem;
+}
+
+.main__screen--wrapper img {
+    border-radius: 20px;
+    background-size: cover;
+}
+
+.main__screen--text {
+    min-height: 315px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 100%;
+    max-width: 36rem;
+    height: 6.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--color-dark);
+    border-radius: 10px;
+
+    transition: all 0.7s;
+}
+
+.btn:hover {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+}

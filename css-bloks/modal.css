@@ -1,0 +1,169 @@
+/* modal-item */
+.modal {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.overlay,
+.overlay__order {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 1;
+    overflow: hidden;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: background-color 0.5s ease;
+}
+
+.modal__window {
+    width: 100%;
+    max-width: 96rem;
+    height: 80rem;
+    padding: 8rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    border-radius: 30px;
+    background-color: var(--color-white);
+
+    overflow: auto;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__window--header {
+    margin-bottom: 3rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.modal__btn--close {
+    padding: 3.8rem;
+
+    display: block;
+    border: none;
+    background: url('/img/close.svg') no-repeat;
+    filter: invert(99%) sepia(0%) saturate(4137%) hue-rotate(98deg) brightness(124%) contrast(95%);
+
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.modal__btn--close:hover {
+    opacity: 0.7;
+}
+
+.modal__window--body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.modal__window--text {
+    max-width: 37.3rem;
+}
+
+.modal__window--text p:first-of-type {
+    margin-bottom: 2rem;
+}
+
+.modal__window--body img {
+    border-radius: 20px;
+    transition: transform 0.5s ease;
+}
+
+.modal__window--body img:hover {
+    transform: scale(1.05);
+}
+
+/* modal-order */
+.modal__order {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal__order.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal__order--wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+
+    width: 90%;
+    max-width: 76rem;
+    height: 60rem;
+    padding: 8rem 6rem;
+    border-radius: 30px;
+
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    overflow: auto;
+    transform: translate(-50%, -50%);
+}
+
+.modal__order--wrapper div {
+    margin-top: 7rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.modal__order--wrapper div h2 {
+    margin-bottom: 2rem;
+}
+
+.modal__order--btn {
+    padding: 3.8rem;
+    position: absolute;
+    top: 8rem;
+    right: 6rem;
+
+    font-size: 2.4rem;
+    background: url('/img/close.svg') no-repeat;
+
+    cursor: pointer;
+    border: none;
+    transition: all 0.5s;
+}
+
+.modal__order--btn:hover {
+    opacity: 0.7;
+}

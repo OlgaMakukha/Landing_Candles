@@ -1,0 +1,80 @@
+.advantages {
+    padding: 4rem 2rem 8rem;
+    background-color: var(--color-white);
+}
+
+.advantages__title {
+    padding-bottom: 10px;
+    margin-bottom: 8rem;
+    border-bottom: 1px solid var(--color-dark);
+}
+
+.advantages__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 10rem;
+}
+
+.advantages__tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.advantages__tab {
+    width: 50rem;
+    padding: 2.8rem 3.6rem 2.8rem 6rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    border: 1px solid var(--color-dark);
+    border-radius: 20px;
+
+    cursor: pointer;
+    transition: all 0.7s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.advantages__tab.active {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.advantages__tab--img {
+    width: 4.8rem;
+    height: 5.0rem;
+    transition: filter 0.7s ease, transform 0.7s ease;
+}
+
+.advantages__tab--img.active {
+    filter: invert(99%) sepia(0%) saturate(4137%) hue-rotate(98deg) brightness(124%) contrast(95%);
+}
+
+.advantages__content--item {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.7s ease-in-out, visibility 0.7s ease-in-out, height 0.7s ease-in-out, transform 0.7s ease-in-out;
+    transform: translateY(-20px);
+}
+
+.advantages__content--item.active {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+    transform: translateY(0);
+}
+
+.advantages__content--item img {
+    border-radius: 20px;
+    margin-bottom: 3.5rem;
+}
+
+.advantages__content--item p {
+    max-width: 45rem;
+}

@@ -1,0 +1,230 @@
+@import url(./css-bloks/header.css);
+@import url(./css-bloks/first-screen.css);
+@import url(./css-bloks/advantages.css);
+@import url(./css-bloks/goods.css);
+@import url(./css-bloks/order.css);
+@import url(./css-bloks/footer.css);
+@import url(./css-bloks/modal.css);
+
+:root {
+    --color-white: #f4f4f4;
+    --color-dark: #323232;
+    --color-light_brown: #ddd0c8;
+
+    --font-family: "Manrope", sans-serif;
+    --second-family: "Yeseva One", sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+html {
+    font-size: 62%;
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    width: 100%;
+
+    font-family: var(--font-family);
+    font-size: 1.6rem;
+    color: var(--color-dark);
+    scrollbar-gutter: stable;
+    transition: padding-right 0.5s ease;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+html.modal-open {
+    overflow-y: hidden;
+    scrollbar-gutter: stable; 
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: block;
+    color: var(--color-dark);
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1 {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 7.2rem;
+}
+
+h2 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 4.8rem;
+}
+
+h3 {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 3.6rem;
+}
+
+.text-p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 2.4rem;
+}
+
+.small-text {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+
+.container {
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* media */
+@media screen and (max-width: 999px) {
+    html {
+        font-size: 55%;
+    }
+
+    .main__screen--wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__screen--text {
+        min-height: 0;
+        gap: 3rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .advantages__wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .goods__item {
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .goods__item--about {
+        gap: 3rem;
+    }
+
+    .order__wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .order__wrapper--left {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 45%;
+    }
+
+    .advantages__wrapper {
+        gap: 6rem;
+    }
+
+    .goods__text {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .modal__window--body {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .main__title {
+        font-size: 5rem;
+    }
+
+    .order__form {
+        align-items: center;
+    }
+
+    .order__wrapper--right {
+        width: 100%;
+    }
+
+    .order__form--item {
+        width: 100%;
+    }
+
+    .order__form input:not([type="checkbox"]) {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    html {
+    font-size: 40%;
+    }
+
+    .btn {
+        max-width: 100%;
+    }
+}
+
+/* animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1) rotate(180deg);
+    }
+    100% {
+        transform: scale(1.1) rotate(180deg);
+    }
+}
+
+@keyframes pulse-next {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}

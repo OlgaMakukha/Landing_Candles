@@ -43,10 +43,14 @@ document.body.addEventListener('submit', function(e) {
             wrapper.classList.remove('error-message');
         }
     });
-    if (allFieldsValid) {
+        if (allFieldsValid) {
         modalOrder.classList.add('active');
+        document.documentElement.classList.add('modal-open');
         form.reset();
-    }
+
+        const scrollbarWidth = getScrollbarWidth();
+        document.documentElement.style.setProperty('--scrollbar-width', `${scrollbarWidth}px`);
+        }
     }
 });
 
@@ -62,6 +66,13 @@ inputs.forEach((input) => {
 
 function closeModalOrder() {
     modalOrder.classList.remove('active');
+    
+    const scrollPosition = window.scrollY;
+    setTimeout(() => {
+        document.documentElement.classList.remove('modal-open');
+        document.documentElement.style.removeProperty('--scrollbar-width');
+        window.scrollTo(0, scrollPosition);
+    }, 350);
 }
 
 modalCloseBtn.addEventListener('click', closeModalOrder);

@@ -1,0 +1,127 @@
+.header {
+    padding: 4rem 2rem;
+    background-color: var(--color-dark);
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header__burger {
+    width: 66px;
+    height: 46px;
+    cursor: pointer;
+    transition: all 0.5s;
+    position: relative;
+}
+
+.header__burger:hover {
+    opacity: 0.7;
+}
+
+.header__burger span,
+.header__burger::before,
+.header__burger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--color-white);
+    transition: all 0.3s ease;
+}
+
+.header__burger span {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header__burger::before {
+    top: 0;
+}
+
+.header__burger::after {
+    bottom: 0;
+}
+
+.header__burger.active span {
+    opacity: 0;
+}
+
+.header__burger.active::before {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.header__burger.active::after {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
+
+.header__phone a {
+    font-weight: 300;
+    font-size: 3.6rem;
+
+    color: var(--color-white);
+    transition: all 0.5s;
+}
+
+.header__phone a:hover {
+    opacity: 0.7;
+}
+
+.header__nav {
+    max-width: 45rem;
+    width: 100%;
+    padding: 0 6rem 10rem 16rem;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    
+    border-radius: 20px;
+    background-color: var(--color-dark);
+    
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.4s, visibility 0.4s, transform 0.4s;
+}
+
+.header__nav.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.header__nav--close {
+    display: none;
+}
+
+.header__menu {
+    margin-top: 2.3rem;
+}
+
+.header__menu a {
+    font-weight: 300;
+    font-size: 3.6rem;
+    color: var(--color-white);
+    transition: all 0.5s;
+}
+
+.header__menu li {
+    margin-bottom: 20px;
+    transition: all 0.5s;
+}
+
+.header__menu li:hover {
+    opacity: 0.7;
+}
+
+.header__menu li:nth-of-type(4) {
+    margin-bottom: 0;
+}
