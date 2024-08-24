@@ -65,7 +65,7 @@
 
     display: block;
     border: none;
-    background: url('/img/close.svg') no-repeat;
+    background: url('../img/close.svg') no-repeat;
     filter: invert(99%) sepia(0%) saturate(4137%) hue-rotate(98deg) brightness(124%) contrast(95%);
 
     cursor: pointer;
@@ -157,7 +157,7 @@
     right: 6rem;
 
     font-size: 2.4rem;
-    background: url('/img/close.svg') no-repeat;
+    background: url('../img/close.svg') no-repeat;
 
     cursor: pointer;
     border: none;
