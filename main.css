@@ -111,7 +111,6 @@ h3 {
     margin: 0 auto;
 }
 
-
 /* media */
 @media screen and (max-width: 999px) {
     html {
@@ -154,6 +153,19 @@ h3 {
     .order__wrapper--left {
         align-items: center;
     }
+
+    .modal__btn--close {
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .modal__order--btn {
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -171,10 +183,30 @@ h3 {
         gap: 2rem;
     }
 
+    .modal__btn--close {
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
     .modal__window--body {
         grid-template-columns: 1fr;
         justify-items: center;
-        gap: 40px;
+    }
+
+    .modal__window--header {
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .modal__window--text {
+        max-width: 95%;
+        font-size: 14px;
+    }
+
+    .modal__window--body img:nth-of-type(2),
+    .modal__window--body img:nth-of-type(3) {
+        display: none;
     }
 }
 
