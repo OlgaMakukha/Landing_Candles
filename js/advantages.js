@@ -22,9 +22,11 @@ tabs.addEventListener('click', function(e) {
     });
 
     if (currentTab === 'nature') {
-        advantagesSection.style.backgroundColor = '#f4f4f4';
+        advantagesSection.classList.remove('advantages-default');
+        advantagesSection.classList.add('advantages-nature');
     } else {
-        advantagesSection.style.backgroundColor = '#ddd0c8';
+        advantagesSection.classList.remove('advantages-nature');
+        advantagesSection.classList.add('advantages-default');
     }
 
     tabIcon.forEach((item) => {

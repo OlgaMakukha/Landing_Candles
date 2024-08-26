@@ -78,3 +78,16 @@
 .advantages__content--item p {
     max-width: 45rem;
 }
+
+.advantages-nature,
+.advantages-default {
+    transition: background-color 0.8s ease-in-out;
+}
+
+.advantages-nature {
+    background-color: var(--color-white);
+}
+
+.advantages-default {
+    background-color: var(--color-light_brown);
+}
